@@ -13,6 +13,8 @@ public class TitleScreen : MonoBehaviour {
 	void Update () {
 	    if(Input.GetKeyDown(KeyCode.Space))
         {
+            PlayerPrefs.SetInt("Kids", 0);
+            PlayerPrefs.SetInt("Rocks", 0);
             SceneManager.LoadScene("SnowboardPrototype");
         }
 	}
